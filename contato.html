@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BeeWare</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="global">
+    <header>
+      <nav class="navbar navbar-expand-lg bg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="image/logo.png" width="80px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="text active" aria-current="page" href="index.html">Home</a>
+              <a class="text" href="loja.html">Loja</a>
+              <a class="text" href="contato.html">Contato</a>
+            
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <nav class="centro">
+      <div class="containercontato">
+        <img src="image/logo2.png" id="logoC"> <br>
+        <label class="tituloC"></label> <br>
+        <div class="login">
+          <label class="titulo">Contato</label> <br>
+          <form action="">
+            <input type="text" name="nome" placeholder="Nome de usuario" autofocus>
+            <input type="text" name="email" placeholder="E-mail" autofocus>
+            <input type="text" id="cep" oninput="mascara_cep()" maxlength="10" placeholder="Digite seu CEP">
+            <input type="tel" placeholder="(31)99999-9999" id="telefone" oninput="mascara_telefone()" maxlegth="14">
+            <input oninput="cpf_mascara(this)" type="text" placeholder="Digite seu CPF">
+            <input type="submit" value="Criar">
+          </form>
+          <p class="login">Já tem uma conta? <a href="indexlogin.html">Login</a></p>
+        </div>
+      </div>
+
+    </nav>
+
+    <footer>
+      <img src="image/logo2.png">
+      <div class="rodapetexts">
+        <label class="rodapetext">Política de Privacidade | Gerenciar Minha Privacidade | Legais | Acessibilidade |
+          Segurança dos Produtos | Fale Conosco</label>
+        <label class="rodapetext2">Copyright © 2022 BeeWare Corporation</label>
+      </div>
+    </footer>
+
+
+
+
+
+
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+</body>
+<script src="script.js"></script>
+
+</html>
